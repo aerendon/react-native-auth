@@ -32,11 +32,11 @@
     "preset": "react-native"
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --fix",
+    "*.{js,jsx,json,css}": [
+      "prettier --single-quote --write",
       "git add"
     ],
-    "*.{json,md,scss,yaml,yml}": [
+    "*.{md,scss,yaml,yml}": [
       "prettier --write",
       "git add"
     ]
